@@ -1,1 +1,25 @@
-<a href="https://www.youtube.com/watch?v=KTf5j9LDObk">ponzi.lol</a>
+<!-- Styling courtesy https://codepen.io/dudleystorey/pen/PZyMrd -->
+<style>
+  * { box-sizing: border-box; }
+  .video-background {
+    background: #000;
+    position: fixed;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: -99;
+  }
+  .video-foreground,
+  .video-background iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+  .video-foreground { width: 300%; left: -100%; }
+</style>
+<div class="video-background">
+  <div class="video-foreground">
+    <iframe src="https://www.youtube.com/embed/KTf5j9LDObk?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=KTf5j9LDObk" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
